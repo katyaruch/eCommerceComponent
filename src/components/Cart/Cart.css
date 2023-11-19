@@ -1,0 +1,164 @@
+/* .cart */
+
+.cart-empty {
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+.cart-list {
+    padding: 0 25px;
+}
+
+.cart-list {
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 43px;
+    margin-bottom: 33px;
+
+    border-bottom: 1px solid #D7D7F9;
+}
+.cart-item:last-child {
+    margin-bottom: 0;
+    border-bottom: 5px solid #D7D7F9;
+}
+
+.cart-item__left,
+.cart-item__right {
+    position: relative;
+
+}
+
+.cart-item__right {
+    width: 100%;
+}
+
+.cart-item__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 62px;
+    height: 62px;
+}
+
+.cart-item__img img {
+    width: 100%;
+}
+
+.cart-item__quantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    margin: auto;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+
+    background: #000000;
+    border-radius: 50%;
+}
+
+.cart-item__name {
+    font-size: 1.125rem;
+}
+
+.cart-item__price {
+    margin-bottom: 16px;
+
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.cart-item__subtotal {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: right;
+}
+
+/* .cart-totals */
+
+.cart-totals {
+    padding: 35px 30px;
+}
+
+.cart-totals-item {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.cart-totals-item__label {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.cart-totals-item__price {
+    display: inline-block;
+    width: 40%;
+
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.price--total {
+    color: var(--color-accent);
+}
+
+/* .quantity */
+
+.quantity {
+    display: flex;
+    align-items: center;
+
+    float: left;
+}
+
+.quantity__btn {
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    background: var(--color-accent);
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+}
+
+.quantity__btn-decrease img {
+    margin-left: -3px;
+}
+
+.quantity__btn-increase img {
+    margin-right: -3px;
+    transform: rotate(180deg);
+}
+
+.quantity__val {
+    min-width: 27px;
+    margin: 0 10px;
+
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}

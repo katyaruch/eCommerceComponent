@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+	--color-accent: #6B00F5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  	margin: 0;
+
+	font-family: Poppins, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+*::-webkit-scrollbar-track {
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(122, 179, 243, 0.4);
+  border-radius: 5px;
+
+  background-clip: content-box;
+}
+
+.App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:  50px;
+  
+  	height: 100vh;
+	padding: 5vh;
+
+	background: url(../assets/images/bg__btm-right.svg) no-repeat bottom right,
+							url(../assets/images/bg__left.svg) no-repeat center left,
+							#EFF0F6 url(../assets/images/bg__top-right.svg) no-repeat top right;
+}
+
+@media screen and (max-width: 576px){
+	.App {
+		height: auto;
+		flex-direction: column;
+	}
+}
+
+/* .panel */
+
+	.panel {
+		position: relative;
+		display: inline-block;
+		max-width: 375px;
+		width: 100%;
+		height: 100%;
+		max-height: 812px;
+		/* padding: 50px 0 0 0; */
+
+		background: #FFFFFF;
+		box-shadow: 0px 0px 70px #C7CBE3;
+		border-radius: 25px;
+
+		overflow-y: auto;
+	}
+
+	.panel__title {
+		position: sticky;
+		top: 0px;
+
+		padding: 40px 0 10px 40px;
+		margin: 0 0 40px;
+
+		font-weight: bold;
+		font-size: 2rem;
+		line-height: 1.5;
+
+		background-color: #FFFFFF;
+		z-index: 1;
+	}
+
+	@media screen and (max-width: 576px){
+		.panel {
+			max-height: 90dvh;
+		}
+	}
+
+/* .button */
+	.button {
+		width: 130px;
+		height: 32px;
+		padding: 4px 18px;
+
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 1rem;
+		line-height: 1.5;
+
+		background: var(--color-accent);
+		border-radius: 20px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.button:hover {
+		background: #000;
+	}
+
+	.button img {
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+
+	.button--in-cart {
+		background: #000;
+	}
+

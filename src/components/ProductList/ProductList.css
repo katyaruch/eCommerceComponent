@@ -1,0 +1,10 @@
+/* .products */
+
+.product-list {
+    padding: 0 0 0 30px;
+    margin: 0;
+}
+
+.product-list .button {
+    position: absolute;
+}
