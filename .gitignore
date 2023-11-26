@@ -9,6 +9,7 @@
 /coverage
 
 /assets
+/build
 
 # misc
 .DS_Store
